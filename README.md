@@ -30,3 +30,34 @@ A secure full-stack authentication system built with **Next.js 15 App Router**, 
 ```bash
 git clone https://github.com/your-username/nextjs-auth-app.git
 cd nextjs-auth-app
+
+```bash
+### 2. Install Dependencies
+npm install
+
+```bash
+3. Set Up Environment Variables
+Create a .env.local file in the root directory:
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secure_jwt_secret
+
+4. Run the Development Server
+npm run dev
+
+🔒 Authentication Flow
+Signup
+→ User registers with email and password
+→ Password is hashed with Bcrypt
+→ User document is stored in MongoDB
+
+Login
+→ User logs in using valid credentials
+→ If correct, a JWT is generated
+→ JWT is stored in an HttpOnly cookie
+
+Access Profile
+→ Profile page checks for valid JWT from cookie
+→ If valid, user data is returned
+→ Else, user is redirected to login
+
+
