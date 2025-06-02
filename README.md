@@ -1,22 +1,21 @@
-
-# 🔐 Next.js 15 Full Stack Authentication System
+#  Next.js 15 Full Stack Authentication System
 
 A secure full-stack authentication system built with **Next.js 15 App Router**, **MongoDB**, **JWT**, **Bcrypt**, and **Bootstrap 5**. This application includes user **Signup**, **Login**, and a **Protected Profile Page**, following modern security best practices.
 
 ---
 
-## 📸 Features
+## Features
 
-- 🔐 **JWT Authentication**: Secure session management with JWTs stored in HttpOnly cookies  
-- 🔒 **Password Encryption**: User passwords are hashed using Bcrypt  
-- 🧑 **Signup & Login**: With full validation and error handling  
-- 👤 **Protected Routes**: Access to profile page is restricted to authenticated users  
-- 🧱 **Modular Folder Structure**: Built with App Router in Next.js 15  
-- 💅 **Responsive UI**: Styled using Bootstrap 5  
+- **JWT Authentication**: Secure session management with JWTs stored in HttpOnly cookies  
+- **Password Encryption**: User passwords are hashed using Bcrypt  
+- **Signup & Login**: With full validation and error handling  
+- **Protected Routes**: Access to profile page is restricted to authenticated users  
+- **Modular Folder Structure**: Built with App Router in Next.js 15  
+- **Responsive UI**: Styled using Bootstrap 5  
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Frontend**: [Next.js 15](https://nextjs.org/) (App Router), [Bootstrap 5](https://getbootstrap.com/)  
 - **Backend**: [Node.js](https://nodejs.org/), [JWT](https://jwt.io/), [Bcrypt](https://www.npmjs.com/package/bcryptjs)  
@@ -24,7 +23,7 @@ A secure full-stack authentication system built with **Next.js 15 App Router**, 
 
 ---
 
-## 🚀 Getting Started
+## Installation Guide
 
 ### 1. Clone the Repository
 
@@ -60,19 +59,19 @@ Visit `http://localhost:3000` in your browser to view the app.
 
 ## 🔒 Authentication Flow
 
-### 👨‍💼 Signup
+### Signup
 
 - User registers with email and password  
 - Password is hashed with Bcrypt  
 - User document is stored in MongoDB  
 
-### 🔑 Login
+### Login
 
 - User logs in using valid credentials  
 - If correct, a JWT is generated  
 - JWT is stored in an HttpOnly cookie  
 
-### 📅 Access Profile
+### Access Profile
 
 - Profile page checks for valid JWT from cookie  
 - If valid, user data is returned  
@@ -80,43 +79,3 @@ Visit `http://localhost:3000` in your browser to view the app.
 
 ---
 
-## 📁 Project Structure
-
-```plaintext
-├── app/
-│   ├── api/
-│   │   └── auth/
-│   ├── profile/
-│   └── layout.jsx
-├── components/
-├── controllers/
-├── models/
-├── utils/
-├── public/
-├── .env.local
-├── .gitignore
-├── next.config.js
-├── package.json
-└── README.md
-```
-
----
-
-## 🧪 Future Improvements
-
-- Add social logins (Google, GitHub)
-- Password reset functionality
-- Role-based access control
-- Email verification
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License. Feel free to use and modify it.
-
----
-
-## 💬 Feedback
-
-If you have any questions or suggestions, feel free to open an issue or submit a pull request!
